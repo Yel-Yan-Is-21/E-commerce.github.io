@@ -1,0 +1,281 @@
+/* ----For Medium screen and small screen--- */
+@media(max-width: 1024px){
+        /* cart page */
+        .coupon input{
+            margin-bottom: 20px;
+        }
+}
+@media (max-width: 768px) {
+/* --For NavBar--- */
+    .navbar{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0; right: 0;
+        background-color: #E3E6F3;
+        box-shadow: var(--card-shadow);
+
+        width: 300px;
+        height: 100vh;
+        padding: 5em 0 0 10px;
+
+        transform: translateX(100%);
+        transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+    }
+    .nav__item{
+        margin-bottom: 1.5em;
+    }
+/* ---humburger menu animation button--- */
+    .nav__toggle{
+        display: block;
+        border: none;
+
+        height: 20px;
+        cursor: pointer;
+        padding: 0.5em;
+
+        position: absolute;
+        right: 0.8em;
+        z-index: 30;
+    }
+    .hamburger{
+        display: block; /* change span's default iniline to block*/
+        position: relative;
+    }
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after{
+        background-color: var(--text-green);
+        color: var(--text-green);
+
+        height: 3px;
+        width: 1.7em;
+        border-radius: 5px;
+        transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+    }
+    .hamburger::after,
+    .hamburger::before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0; right: 0;
+    }
+    .hamburger::before{top: 6px;}
+    .hamburger::after{bottom: 6px;}
+/* ---add nav__pen from js for animation hamburger */
+    .nav__open .navbar{
+        transform: translateX(0);
+    }
+    .nav__open .nav__toggle{
+        position: fixed;
+    }
+    .nav__open .hamburger{
+        transform: rotate(45deg);
+    }
+    .nav__open .hamburger::before{
+        transform: rotate(90deg) translateX(-6px);
+    }
+    .nav__open .hamburger::after{
+        opacity: 0;
+    }
+    /* design trend */
+    .trend-box,
+    .trend-box-2{
+        padding-bottom: 10px;
+    }   
+    /* newsletter section */
+    .newsletter-wrapper{
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+        width: 80%;
+        margin-top: 1rem;
+    }
+    /* ---product section--- */
+    .md-cols-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    /* sproduct page | product details section */
+    .product-details .container-fluid{
+        flex-direction: column;
+        --gap: 0.5em !important;
+        padding-inline: 1em;
+    }
+    .product-details .single-pro-image{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .product-details .single-pro-details {
+        width: 100%;
+    }
+
+    /* ---contact page--- */
+    .contact-details-section .container-fluid{
+        flex-direction: column;
+    }
+    .contact-details-section .details {
+        width: 100%;
+    }
+    .contact-details-section .details span{
+        text-align: center;
+        display: block;
+    }
+    .contact-details-section .map {
+        width: 95%;
+        margin: 0 auto;
+        padding: 2em 1em;
+    }
+    .form-details-section .container-fluid {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form-details-section form h2,
+    .form-details-section form span{
+        margin: 0 auto 1em;
+    }
+    .form-details-section form {
+        width: 100%;
+    }
+    .form-details-section form input, .form-details-section form textarea {
+        width: 75%;
+        margin: 0.5em auto;
+    }
+    .form-details-section form > a {
+        margin: 0 auto;
+    }
+    .form-details-section .people {
+        margin-top: 4em;
+    }
+    /* about page */
+    .about-head-section .container-fluid{
+        flex-direction: column;
+    }
+    .about-head-section img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+    .about-head-section .container-fluid div{
+        padding: 0 1em;
+    }
+    .about-app-section .video {
+        width: 100%;
+        height: 100%;
+        padding-inline: 1.5rem;
+    }
+}
+@media (max-width: 560px) {
+    .form{
+        width: 100%;
+        flex-direction: column;
+    }
+    .form input{
+        width: 100% !important;
+    }
+    .signUp-btn{
+        width: 30%;
+        padding: 0.8rem 1rem;
+    }
+    .trend-box-2 a,
+    .learn-btn{
+        margin-bottom: 1rem;
+    }
+    .col-1{
+        grid-template-columns: repeat(1, minmax(0, 250px));
+        justify-content: center;
+    }
+    /* blog page */
+    .blog .container-fluid{
+        padding-inline: 1rem;
+    }
+    .blog-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .blog-image,.blog-details{
+        width: 100% !important;
+    }
+    /* contact page */
+    .form-details-section form input, .form-details-section form textarea {
+        width: 100%;
+    }
+    /* cart page */
+    .cart-add-section .container-fluid{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .coupon{
+        width: 100%;
+    }
+    .subtotal{
+        width: 100%;
+        padding: 20px;
+    }
+    /* footer */
+    .footer .container-fluid{
+        padding: 0 1em;
+    }
+    .footer-col-1{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+/* ---------------------------------- */
+/* for small screen */
+/* ---------------------------------- */
+@media(min-width: 640px){
+    .container-fluid{
+        max-width: 640px;
+    }
+}
+/* ---------------------------------- */
+/* for large screen and medium */
+/* ---------------------------------- */
+@media (min-width: 768px) {
+    .container-fluid{
+        max-width: 768px;
+    }
+/* ---features section--- */
+    .md-cols-3{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+/* ---product section--- */
+    .md-cols-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+/* ---------------------------------- */
+/* for large screen */
+/* ---------------------------------- */
+@media(min-width: 1024px){
+    .container-fluid{
+        max-width: 1024px;
+    }
+/* ---features section--- */
+    .lg-cols-6{
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+/* ---product section--- */
+    .lg-cols-4{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+/* ---design trend section--- */
+    .lg-cols-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .lg-cols-3{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        height: 40vh;
+    }
+}
+/* ---------------------------------- */
+/* for large screen xl*/
+/* ---------------------------------- */
+@media(min-width: 1280px){
+    .container-fluid{
+        max-width: 1280px;
+    }
+}

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="../vendors/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- media query css -->
+    <link rel="stylesheet" href="./query.css">
+    <title>eCommerce</title>
+</head>
+<body>
+<!-------------Header ---------------->
+    <header class="header bg-gray card-shadow z-50" id="header">
+        <div class="container-fluid mx-auto flex nav-container py-5">
+            <a href="#"><img src="../img/logo.png" alt="logo" class="logo"></a>
+
+            <!-- nav-toggle -->
+            <button class="nav__toggle bg-transparent" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <div>
+                <ul class="navbar flex justify-center align-center">
+                    <li class="nav__item mx-2"><a href="index.html" class="text-dark  spartan text-sm md-bold link">Home</a></li>
+                    <li class="nav__item mx-2"><a href="shop.html" class="active text-dark spartan text-sm md-bold link">Shop</a></li>
+                    <li class="nav__item mx-2"><a href="blog.html" class="text-dark spartan text-sm md-bold link">Blog</a></li>
+                    <li class="nav__item mx-2"><a href="about.html" class="text-dark spartan text-sm md-bold link">About</a></li>
+                    <li class="nav__item mx-2"><a href="contact.html" class="text-dark spartan text-sm md-bold link">Contact</a></li>
+                    <li class="nav__item mx-2"><a href="cart.html" class="text-dark spartan text-md md-bold link"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main" id="main">
+<!-------------page header section---------------->
+        <section class="page-header py-5 flex  justify-center align-center container w-100" id="page-header">
+            <div class="flex flex-column justify-center align-center container-fluid mx-auto">
+                <h2 class="text-white text-xl bold spartan">#stayhome</h2>
+                <p class="text-white">Save More With Coupons & Up To 70% off!</p>
+            </div>
+        </section>
+<!-------------Feature products section---------------->
+        <section class="product-section py-10 container" id="product-section">
+            <div class="container-fluid mx-auto">
+                <div class="product-container grid lg-cols-4 md-cols-2 col-1" style="--gap: 1.5em">
+                    <!-- product 1 -->
+                    <div class="product card-shadow mt-5" onclick="window.location.href = 'sproduct.html';">
+                        <div>
+                            <img src="../img/products/f1.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                    <!-- product 2 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/f2.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                    <!-- product 3 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/f3.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                    <!-- product 4 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/f4.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                    <!-- product 5 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/f5.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                    <!-- product 6 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/f6.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                    <!-- product 7 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/f7.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                    <!-- product 8 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/f8.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-container grid lg-cols-4 md-cols-2 col-1" style="--gap: 1.5em">
+                    <!-- product 1 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/n1.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                    <!-- product 2 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/n2.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                    <!-- product 3 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/n3.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                    <!-- product 4 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/n4.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                    <!-- product 5 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/n5.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                    <!-- product 6 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/n6.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                    <!-- product 7 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/n7.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                    <!-- product 8 -->
+                    <div class="product card-shadow mt-5">
+                        <div>
+                            <img src="../img/products/n8.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="product-description mt-2">
+                            <span class="text-gray md-bold">adidas</span>
+                            <h5 class="md-bold text-sm pt-1">Cartoon Astronaut T-shirts</h5>
+                            <div class="star pt-1">
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                                <i class="fas fa-star text-star"></i>
+                            </div>
+                        </div>
+                        <div class="pt-1 flex align-center price-cart">
+                            <h4 class="pt-1 text-green text-sm">$78</h4>
+                            <a href="#" class="text-green spin"><i class="fas fa-shopping-cart cart text-center"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-------------Pagination---------------->
+        <section class="pagination container-fluid mx-auto text-center mb-3" id="pagination">
+            <a href="#" class="bg-green text-white text-tiny">1</a>
+            <a href="#" class="bg-green text-white text-tiny">2</a>
+            <a href="#" class="bg-green text-white text-tiny"><i class="fa-solid fa-arrow-right-long"></i></a>
+        </section>
+<!-------------Newsletter section---------------->
+<section class="newsletter-section container py-10 w-100" id="newsletter-section">
+    <div class="container-fluid mx-auto newsletter-wrapper flex flex-wrap align-center justify-between">
+        <div class="newsletter-para">
+            <h1 class="text-white text-lg bold spartan">Sign Up For Newsletter</h1>
+            <p class="text-gray pt-1">
+                Get Email updates about our lastest shop and <span class="text-green md-bold">special offer</span>
+            </p>
+        </div>
+        <div class="form flex" style="--gap: 0.5rem;">
+            <input type="text" placeholder="Your Email Address">
+            <button class="signUp-btn btn text-white">Sign Up</button>
+        </div>
+    </div>
+</section>
+    </main>
+<!-------------Footer----------->
+    <footer class="footer py-10 container" id="footer">
+        <div class="container-fluid mx-auto grid lg-cols-4 md-cols-2 footer-col-1" style="--gap: 2rem;">
+            <div class="footer-col">
+                <img src="../img/logo.png" alt="">
+                <h4 class="text-black bold pt-2">Contact</h4>
+                <p class="text-gray pt-1 md-bold">
+                    <strong class="bold text-black">Phone:</strong> +01 2222 365/ (+91) 01 2345 6789
+                </p>
+                <p class="text-gray pt-1 md-bold">
+                    <strong class="bold text-black">Hours:</strong> 10:00 - 18:00, Mon - Sat
+                </p>
+                <div class="follow pt-1">
+                    <h4 class="text-black bold">Follow Us</h4>
+                    <div class="icon text-md">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-youtube-square"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-col-2 -->
+            <div class="footer-col-2">
+                <h3 class="text-md text-black bold">About</h3>
+                <ul class="pt-2">
+                    <li class="footer-item pt-1"><a href="#" class="footer-link text-gray md-bold">About Us</a></li>
+                    <li class="footer-item pt-1"><a href="#" class="footer-link text-gray md-bold">Delivery Information</a></li>
+                    <li class="footer-item pt-1"><a href="#" class="footer-link text-gray md-bold">Privac Policy</a></li>
+                    <li class="footer-item pt-1"><a href="#" class="footer-link text-gray md-bold">Terms & Conditons</a></li>
+                    <li class="footer-item pt-1"><a href="#" class="footer-link text-gray md-bold">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- footer-col-3 -->
+            <div class="footer-col-3">
+                <h3 class="text-md text-black bold">My Account</h3>
+                <ul class="pt-2">
+                    <li class="footer-item pt-1"><a href="#" class="footer-link text-gray md-bold">Sign In</a></li>
+                    <li class="footer-item pt-1"><a href="#" class="footer-link text-gray md-bold">View Cart</a></li>
+                    <li class="footer-item pt-1"><a href="#" class="footer-link text-gray md-bold">My Wishlist</a></li>
+                    <li class="footer-item pt-1"><a href="#" class="footer-link text-gray md-bold">Track My Orders</a></li>
+                    <li class="footer-item pt-1"><a href="#" class="footer-link text-gray md-bold">Help</a></li>
+                </ul>
+            </div>
+            <!-- footer-col-4 -->
+            <div class="footer-col-4">
+                <h3 class="text-md text-black bold" style="margin-bottom: 1.4rem;">Install App</h3>
+                <a href="#" class=" text-gray md-bold">From App Store Or Google Play</a>
+                <div class="flex  pt-1 mb-2">
+                    <div>
+                        <img src="../img/pay/app.jpg" alt="" class="w-100" style="border: 1px solid black;">
+                    </div>
+                    <div>
+                        <img src="../img/pay/play.jpg" alt="" class="w-100" style="border: 1px solid black;">
+                    </div>
+                </div>
+                <a href="#" class=" text-gray md-bold">Secure Payment Gateways</a>
+        
+                <div class="pt-1">
+                    <img src="../img/pay/pay.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+
+        <h3 class="text-center text-gray text-sm bold mt-2">
+            2021 Yel Yan - Html Css eCommerce Templates
+        </h3>
+    </footer>
+
+    <!-- custom js -->
+    <script src="./main.js"></script>
+</body>
+</html>
